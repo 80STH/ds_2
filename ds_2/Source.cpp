@@ -6,11 +6,11 @@ void main()
 {
 	setlocale(LC_ALL, "RUS");
 	float A, B, C, S, p;
-	printf_s("Введите A, B и С:");
+	printf_s("Г‚ГўГҐГ¤ГЁГІГҐ A, B ГЁ Г‘:");
 	scanf_s(" %f %f %f", &A, &B, &C);
-	p = A + B + C;
+	p = (A + B + C) / 2;
 	S = sqrt(p*(p-A)*(p-B)*(p-C));
-	if (A + B > C && A + C > B && B + C > A) printf_s("Площадь треугольника равна %.2f", S);
-	else printf_s("Такого треугольника не существует!");
+	if (A + B > C && A + C > B && B + C > A) printf_s("ГЏГ«Г®Г№Г Г¤Гј ГІГ°ГҐГіГЈГ®Г«ГјГ­ГЁГЄГ  Г°Г ГўГ­Г  %.2f", S);
+	else printf_s("Г’Г ГЄГ®ГЈГ® ГІГ°ГҐГіГЈГ®Г«ГјГ­ГЁГЄГ  Г­ГҐ Г±ГіГ№ГҐГ±ГІГўГіГҐГІ!");
 	_getche();
 }
